@@ -1,63 +1,80 @@
-* {
+:root{
+    --grey-obs: #272727;
+    --grey-clair: #666666;
+    --violet: #5e17eb;
+    --blanco: #f4f4f4;
+}
+
+*{
     margin: 0;
-    color: azure;
-    font-family: 'Alkalami', serif;
+    padding: 0;
 }
 
-body {
-    background-image: url("violetaF.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+a{
+    text-decoration: none;
 }
-
-ul { list-style-type:none }
-
-.redes ul{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    border: 2px  solid rgb(0, 0, 0);
-    background-color: rgba(231, 234, 47, 0.6);
-    
-}
-
-.redes{
-    background-color: rgba(red, rgb(0, 255, 0), #fff, 0.4);
-}
-
-
+/* SECCION BARRA INICIO */
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--grey-obs);
+    height: 70px;
+    width: 100%;
+    padding: 0px 5%;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.logo a{
+    color: var(--violet);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+header nav ul{
+    display: flex;
+
+}
+header nav ul li{
+    display: flex;
+    padding: 0px 10px;
+}
+header nav ul li a{
+    color: var(--blanco);
+    font-size:  10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* FIN BARRA INICIO */
+
+/* SECCION INICIO BANNER */
+#container-inicio{
+    padding: 100px;
+    align-items: center;
+    border:var(--grey-clair) 5px solid;
+    background-image: url("../patagonia.png");
+    height: 100%;
+}
+
+
+
+.contenido-banner{
+    border: #5e17eb 5px solid;
     align-items: center;
     
+    background-color: var(--grey-obs);
+    justify-content: center;
 }
-
-h1 span{
-    font-family: "sans-serif";
-    color: burlywood;
+.contenido-nombre{
+    color: var(--blanco);
+    display: block;    
 }
-
-h1{
-    font-size: x-large;
-    display: block;
-    width: 500px;
-    border: 2px thin rgba(255, 255, 0, 0.6);
-    background-color: rgba(0, 0, 0, 0.7);
-    margin-top: 200px;
+.contenido-nombre h1{
+    display: block; 
+    width: auto;
 }
+.contenido-banner div{
+    padding-top: 15px;
 
-.titulo-sobreMi{
-    border: 2px solid red;
-    width: 200px;
-    position: relative;
-}
-
-
-.tecnologias{
-    border: 2px solid rgb(red, green, blue);
-    background-color: rgba(207, 210, 15, 0.6);
-   justify-content: flex-end;
 }
