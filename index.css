@@ -13,7 +13,17 @@
 a{
     text-decoration: none;
 }
+
+body{
+    /* background-image: url("../patagonia.png"); */
+}
 /* SECCION BARRA INICIO */
+#container-header{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+
 header{
     display: flex;
     justify-content: space-evenly;
@@ -24,25 +34,27 @@ header{
     padding: 0px 5%;
     position: fixed;
     box-sizing: border-box;
+    
 }
 
 .logo a{
     color: var(--violet);
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 header nav ul{
     display: flex;
-
+   
 }
 header nav ul li{
     display: flex;
     padding: 0px 10px;
+    font-size: 20px;
 }
 header nav ul li a{
     color: var(--blanco);
-    font-size:  10px;
+    font-size:  15px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -50,31 +62,217 @@ header nav ul li a{
 
 /* SECCION INICIO BANNER */
 #container-inicio{
-    padding: 100px;
+    display: flex;
     align-items: center;
-    border:var(--grey-clair) 5px solid;
-    background-image: url("../patagonia.png");
-    height: 100%;
+    justify-content: center;
+     background-image: url("../patagonia.png"); 
+    background-size: 100% 100%;
+    padding: 270px 200px;
+    
 }
 
+.contenido-banner #davo{
+    width: 200px 200px;
+    height: 120px;
+    border-radius: 20px;
+    border: 2px solid var(--violet);
 
+}
+
+.cv{
+    background-color: var(--grey-obs);
+    margin:0;
+    border-radius: 30px;
+    border: 2px solid var(--violet);
+    color: var(--blanco);
+    padding: 5px;
+    
+}
+.cv a{
+    padding: 10px 10px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blanco);
+}
 
 .contenido-banner{
-    border: #5e17eb 5px solid;
+    justify-content: space-around;
+    width: 50% 30%;
+    height: 350px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 2px solid var(--grey-obs); 
     align-items: center;
-    
     background-color: var(--grey-obs);
-    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .contenido-nombre{
+    margin-top: 0;
+    padding-top: 0;
     color: var(--blanco);
-    display: block;    
+    padding: 5px; 
 }
+
 .contenido-nombre h1{
-    display: block; 
-    width: auto;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
-.contenido-banner div{
-    padding-top: 15px;
+
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+}
+/* FIN SECCION INICIO */
+
+/* SECCION SOBRE MÍ */
+
+#container-sobremi{
+    background-color: var(--grey-obs);
+    justify-content: center;
+    padding: 5%;
+    color: var(--blanco);
+    font-size: 20px;
+    align-items: center;
+    
+}
+#container-sobremi h2{
+    text-align: center;
+    
+}
+
+.sobremi{
+    padding: 20px 20px;
+    
+}
+
+
+.interes-nacimiento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.intereses{
+    display: flex;
+    align-items: center;
+}
+
+.interes{
+    background-color: var(--grey-clair);
+    border-radius: 25px;
+    border: var(--violet) 2px solid;
+    width: 60%;
+    
+}
+/* FIN SECCION SOBRE MI */
+
+/* SECCION HABILIDADES */
+
+#container-habilidades{
+
+    background-color: var(--grey-clair);
+    justify-content: center;
+    padding: 3%;
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+#container-habilidades h2{
+    text-align: center;
+    padding: 2%;
+}
+ .habilidades{
+    display: flex;
+    justify-content: space-around;
+    padding: auto;
 
 }
+
+
+
+.skill{
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--grey-obs) 2px solid; 
+    height: 10px;
+    margin: 10px;
+    text-align: center;
+} 
+/* FIN SECCION HABILIDADES */
+
+/* SECCION EDUCACION */
+
+#container-educacion{
+    background-color: var(--grey-obs);
+    justify-content: center;
+    padding: 50px 50px;
+    color: var(--blanco);
+    font-size: 20px;
+    padding: 5% 0px;
+}
+
+#container-educacion h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.educacion{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.instituto{
+    flex-direction: column;
+    padding: 0px 20px;
+    display: flex;
+}
+
+
+/* FIN SECCION ECUCACION */
+
+/* SECCION PROYECTOS */
+#container-proyectos{
+    background-color: var(--grey-clair);
+    color: var(--blanco);
+    padding: 3%;
+    text-align: center;
+}
+
+
+#container-proyectos h2{
+    text-align: center;
+    padding-bottom: 3%;
+}
+.proyectos{
+    display: flex;
+    
+}
+
+.proyecto{
+    width: 30%;
+}
+
+.calcu{
+    width: 50%;
+}
+
+.nilo{
+    width: 50%;
+}
+
+.todo{
+    width: 50%;
+}
+
+/* FIN SECCION PROYECTOS */
+
+/* SECCION FORMULARIO Y FOOTER */
+
