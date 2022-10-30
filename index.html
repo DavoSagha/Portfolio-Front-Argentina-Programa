@@ -139,18 +139,26 @@
     <!-- SECCION CONTACTO -->
     <section id="container-contacto">
       <div class="contenedor-form">
-        <h2>Contacto</h2>
-        <div class="form">
-          <form>
-            <label for="Nombre"></label>
-            <input type="text" name="name" id="Nombre" placeholder="Ingrese su nombre">
-            <label for="mail"></label>
-            <input type="mail" name="mail" id="Mail" placeholder="Ingrese su mail">
-            <label for="message"></label>
-            <input type="text" name="message" id="Message" placeholder="Su mensaje...">
-            <input type="submit">
-          </form>
-        </div>
+        <form action="" class="form">
+          <div class="form-header">
+            <h2 class="form-title">
+              <span>C</span>ontacto
+            </h2>
+          </div>
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-input" id="nombre" placeholder="Escriba su nombre" name="" >
+        
+          <label for="email" class="form-label">Correo</label>
+          <input type="email" class="form-input" id="email" placeholder="Escriba su mail">
+
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-input" name="" id="asunto" placeholder="Escriba el asunto">
+
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea name="" id="mensaje"  class="form-textarea" placeholder="Escriba su mensaje"></textarea>
+
+          <input type="submit" class="btn-submit" value="Enviar Consulta">
+        </form>
       </div>
     </section>
 <!-- FOOTER -->
